@@ -72,7 +72,8 @@ body {
 
 .feed__profile {
 	background-color: var(--card-background);
-	border-radius: 0px 0px 16px 16px;
+	border-radius: 1.5rem;
+	overflow: hidden;
 }
 
 .profile__background {
@@ -90,4 +91,99 @@ body {
 	position: absolute;
 	left: 178px;
 	top: 194px;
+}
+
+.profile__info {
+	display: grid;
+	grid-template-areas: "pessoal carreira";
+	padding-top: 3.5rem;
+	padding-left: 1.5rem;
+	padding-bottom: 1.5rem;
+	font-family: var(--font-roboto);
+}
+
+.info__pessoa {
+	grid-area: pessoal;
+}
+
+.info__pessoa > * {
+	padding-bottom: 0.4rem;
+}
+
+.info__carreira {
+	grid-area: carreira;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 1rem;
+}
+
+.carreira__detalhes {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.carreira__detalhes h2 {
+	font-weight: 600;
+	color: var(--texto-primario);
+	font-size: 1rem;
+}
+
+.info__nome,
+.info__titulo {
+	color: var(--texto-primario);
+}
+
+.info__nome {
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 1.25;
+}
+
+.info__titulo {
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.25;
+}
+
+.info__tags,
+.info__local {
+	font-size: 0.875rem;
+	color: var(--texto-secundario);
+}
+
+.info__local {
+	display: inline-block;
+}
+
+.info__contato {
+	font-size: 0.875rem;
+	font-weight: 700;
+	color: var(--blue);
+}
+
+.info__contato::before {
+	content: "\00B7";
+	color: var(--texto-secundario);
+	padding: 0 0.2rem;
+}
+
+.info__rede {
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.info__seguidores,
+.info__conexao {
+	color: var(--blue);
+}
+
+.info__conexao::before {
+	content: "\00B7";
+	color: var(--texto-secundario);
+	padding: 0 0.5rem;
+}
+
+.profile__btn {
 }
