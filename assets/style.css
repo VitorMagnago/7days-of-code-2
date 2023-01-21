@@ -10,6 +10,7 @@
 	--blue: #70b5f9;
 	--form-input: #38434f;
 	--white: #ffffff;
+	--texto-escuro: rgba(0, 0, 0, 0.75);
 }
 
 body {
@@ -185,5 +186,25 @@ body {
 	padding: 0 0.5rem;
 }
 
+.profile__acoes {
+	padding-top: 0.5rem;
+}
+
 .profile__btn {
+	border: 1px solid #70b5f9;
+	border-radius: 16px;
+	font-size: 0.875rem;
+	font-weight: 500;
+}
+
+.profile__btn--mensagem {
+	padding: 6px 29px;
+	color: var(--texto-escuro);
+	background-color: var(--blue);
+}
+
+.profile__btn--mais {
+	padding: 6px 48px;
+	margin-left: 0.5rem;
+	color: var(--blue);
 }
