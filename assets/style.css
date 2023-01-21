@@ -199,13 +199,13 @@ body {
 }
 
 .profile__btn--mensagem {
-	padding: 6px 29px;
+	padding: 0.375rem 1.8125rem;
 	color: var(--texto-escuro);
 	background-color: var(--blue);
 }
 
 .profile__btn--mais {
-	padding: 6px 48px;
+	padding: 0.375rem 3rem;
 	margin-left: 0.5rem;
 	color: var(--blue);
 }
