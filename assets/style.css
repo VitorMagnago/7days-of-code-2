@@ -67,8 +67,9 @@ body {
 .principal {
 	max-width: 80vw;
 	display: grid;
-	grid-template-columns: calc(70% - 32px) calc(30% - 32px);
+	grid-template-columns: calc(70%) calc(30%);
 	margin: 1.5rem auto;
+	column-gap: 2rem;
 }
 
 .feed__profile {
